@@ -7,6 +7,7 @@ pnpm install
 pnpm dev              # start the app
 pnpm i18n:extract     # scan src/ and update src/locales/*/translation.json
 pnpm i18n:status      # show translation coverage per language
+pnpm i18n:upload      # upload translation files to Weblate (see below)
 ```
 
 ## Translation files
@@ -29,3 +30,16 @@ pnpm i18n:status      # show translation coverage per language
 | Source language         | English                             |
 
 Weblate groups the `_one/_few/_many/_other` keys into one plural string, so translators see a single entry with a field for each Czech plural form.
+
+## Uploading to Weblate
+
+```sh
+cp .env.example .env   # fill in WEBLATE_URL and WEBLATE_TOKEN (Weblate -> Your profile -> API access)
+pnpm i18n:extract
+pnpm i18n:upload
+```
+
+`scripts/weblate-upload.mjs` uploads every `src/locales/<lang>/translation.json` to the `shoptet-i18next-demo` project. It finds the component by its file mask; set `WEBLATE_COMPONENT` (and `WEBLATE_PROJECT`) to override.
+
+- **English (source):** uploaded with `method=replace`, so the source strings in Weblate match the code. New keys are added, and keys deleted from the code are removed.
+- **Other languages:** uploaded with `method=translate, conflicts=ignore`, so they only fill in strings that are still untranslated and never overwrite what translators wrote in Weblate.

@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "i18n:extract": "i18next-cli extract",
-    "i18n:status": "i18next-cli status"
+    "i18n:status": "i18next-cli status",
+    "i18n:upload": "node --env-file-if-exists=.env scripts/weblate-upload.mjs"
   },
   "dependencies": {
     "i18next": "^27.2.5",
