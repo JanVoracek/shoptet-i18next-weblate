@@ -1,0 +1,15 @@
+{
+  "_STOREFRONT_CART_ITEM_COUNT_one": "V košíku máte {{count}} položku",
+  "_STOREFRONT_CART_ITEM_COUNT_few": "V košíku máte {{count}} položky",
+  "_STOREFRONT_CART_ITEM_COUNT_many": "V košíku máte {{count}} položky",
+  "_STOREFRONT_CART_ITEM_COUNT_other": "V košíku máte {{count}} položek",
+  "_STOREFRONT_CART_TITLE": "Nákupní košík",
+  "_STOREFRONT_DECREASE_QUANTITY_LABEL": "Odebrat položku",
+  "_STOREFRONT_DEMO_TITLE": "Ukázka i18next + Weblate",
+  "_STOREFRONT_FREE_SHIPPING_HINT_one": "Přidejte ještě <bold>{{count}} položku</bold> a získáte <terms>dopravu zdarma</terms>.",
+  "_STOREFRONT_FREE_SHIPPING_HINT_few": "Přidejte ještě <bold>{{count}} položky</bold> a získáte <terms>dopravu zdarma</terms>.",
+  "_STOREFRONT_FREE_SHIPPING_HINT_many": "Přidejte ještě <bold>{{count}} položky</bold> a získáte <terms>dopravu zdarma</terms>.",
+  "_STOREFRONT_FREE_SHIPPING_HINT_other": "Přidejte ještě <bold>{{count}} položek</bold> a získáte <terms>dopravu zdarma</terms>.",
+  "_STOREFRONT_INCREASE_QUANTITY_LABEL": "Přidat položku",
+  "_STOREFRONT_LANGUAGE_LABEL": "Jazyk"
+}
